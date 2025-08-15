@@ -10,7 +10,7 @@ import BusInfo from './Pages/BusInfo';
 
 function App(): React.ReactElement {
 
-  return <BrowserRouter>
+  return <BrowserRouter  basename="/bus-board">
   <Routes>
     <Route path = "/" element = {<Home/>}></Route>
     <Route path = "/BusInfo/:BusID" element = {<BusInfo/>}></Route>
